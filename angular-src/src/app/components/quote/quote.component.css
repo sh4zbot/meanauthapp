@@ -1,0 +1,24 @@
+.quotes {
+  width: 70%;
+  margin:0 auto;
+  margin-top: 120px;
+  text-align: center;
+  background: #badeba;
+  box-shadow: 5px 5px 10px #888888;
+  
+}
+
+.quotes .quotee {
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+
+.quotes .quote-text {
+  padding: 10px;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+}

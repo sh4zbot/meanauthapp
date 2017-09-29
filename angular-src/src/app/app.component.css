@@ -1,0 +1,9 @@
+.container {
+  position: fixed;
+  left:0px;
+  top:0px;
+  width: 100%;
+  background: #fff;
+  background-color:rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 10px #888888;
+}
