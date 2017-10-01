@@ -7,12 +7,19 @@ import 'rxjs/add/operator/map';
 export class UserService {
 
   result:any;
+  URI = "http://localhost:3000";
+  constructor(private _http: Http) { }	
 
-  constructor(private _http: Http) { }
+  registerUser(user) {
+  	let headers = new Headers();
+  	headers.append('Content-Type','application/json');
+  	return this._http.post(this.URI + '/users/register', user, {headers: headers})
+  		.map(res => res.json());
+  }
 
   getUsers() {
-    return this._http.get("/api/users")
-      .map(result => this.result = result.json().data);
+    return this._http.get(this.URI + "/users/profiles")
+      .map(result => result.json());
   }
 
 }

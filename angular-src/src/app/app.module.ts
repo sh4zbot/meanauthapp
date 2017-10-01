@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
+
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +14,10 @@ import { PageviewerComponent } from './components/pageviewer/pageviewer.componen
 import { QuoteComponent } from './components/quote/quote.component';
 import { LoginformComponent } from './components/loginform/loginform.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+
+import { ValidateService} from './services/validate.service';
 import { UserService } from './services/user.service';
+import { RegisterComponent } from './components/register/register.component';
 
 
 const routes: Routes = [
@@ -19,8 +25,8 @@ const routes: Routes = [
   { path: 'home',  component: QuoteComponent },
   { path: 'about',  component: PageviewerComponent },
   { path: 'login',  component: LoginformComponent },
+  { path: 'register',  component: RegisterComponent },
 ];
-
 
 @NgModule({
   declarations: [
@@ -28,14 +34,17 @@ const routes: Routes = [
     NavbarComponent,
     PageviewerComponent,
     QuoteComponent,
-    LoginformComponent
+    LoginformComponent,
+    RegisterComponent
   ],
   imports: [
   	RouterModule.forRoot(routes),
     BrowserModule,
-    HttpModule
+    HttpModule,
+    FormsModule,
+    FlashMessagesModule
   ],
-  providers: [UserService],
+  providers: [UserService, ValidateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

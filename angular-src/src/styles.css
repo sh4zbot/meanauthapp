@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	background: #ccc;
+}
+
+.alert-success {
+  width:70%;
+  margin: 0 auto;
+  background: rgba(66, 244, 95, 0.8);
+}

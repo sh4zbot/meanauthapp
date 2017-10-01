@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 
 export class LoginformComponent {
+	username: String;
+	password: String;
+
+	onLoginformSubmit(){
+		console.log('123');
+		const user = {
+			username: this.username,
+			password: this.password
+		}
+	}
 
 }

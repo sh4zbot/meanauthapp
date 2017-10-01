@@ -1,0 +1,17 @@
+form {
+  width: 70%;
+  margin:0 auto;
+  margin-top: 20px;
+  text-align: left;
+  background: #badeba;
+  box-shadow: 5px 5px 10px #888888;
+  font-family: 'Oswald', sans-serif; 
+}
+
+form .form-group {
+	
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+}
+
