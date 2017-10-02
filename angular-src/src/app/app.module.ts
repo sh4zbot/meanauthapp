@@ -18,6 +18,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ValidateService} from './services/validate.service';
 import { UserService } from './services/user.service';
 import { RegisterComponent } from './components/register/register.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,8 @@ const routes: Routes = [
     PageviewerComponent,
     QuoteComponent,
     LoginformComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
   	RouterModule.forRoot(routes),

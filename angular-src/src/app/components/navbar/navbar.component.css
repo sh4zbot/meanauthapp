@@ -3,8 +3,6 @@
   /*background-color: #731987;*/
   width: 70%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
   padding: 20px;
   color: #badeba;
   font-family: 'Oswald', sans-serif;
@@ -20,6 +18,7 @@
   text-decoration: inherit; /* no underline */
 }
 
+/*
 .navbar ul {
   list-style: none;
   display: flex;
@@ -28,3 +27,4 @@
 .navbar li {
   margin-left: 30px;
 }
+*/

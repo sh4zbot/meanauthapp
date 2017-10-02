@@ -1,13 +1,22 @@
 <div class="container">
 
 	<div class="navbar">
-	  <div class="icon"></div>
-	  <ul>
-	    <li><a routerLink="/home">Home</a></li>
-	    <li><a routerLink="/about">About</a></li>
-	    <li>Projects</li>
-	    <li><a routerLink="/login">Login</a></li>
-	  </ul>
+	 
+	  
+	<div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+    
+    <a href="#" class="pure-menu-heading pure-menu-link icon">hugo lindeberg</a>
+        <li class="pure-menu-item"><a routerLink="/home" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item"><a routerLink="/about" class="pure-menu-link">About</a></li>
+        <li class="pure-menu-item"><a routerLink="#" class="pure-menu-link">Projects</a></li>
+        <li class="pure-menu-item"><a routerLink="/login" class="pure-menu-link">Login</a></li>
+        <li class="pure-menu-item"><a routerLink="/register" class="pure-menu-link">Register</a></li>
+        <li class="pure-menu-item"><a href="#" (click)="onLogoutClick()" class="pure-menu-link">Logout</a></li>
+
+    </ul>
+	</div>
+
 	</div>
 
 </div>
